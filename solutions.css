@@ -13,3 +13,19 @@
 .ex-2-square:active{
   width: 100%;
 }
+
+.ex-3-square{
+  transition: border-radius 0.7s ease;
+}
+
+.ex-3-square:hover{
+  border-radius: 50%;
+}
+
+.ex-4-square{
+  transition: opacity 1.5s ease;
+}
+
+.ex-4-square:hover{
+  opacity: 0;
+}
