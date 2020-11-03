@@ -194,23 +194,23 @@
 
 @keyframes left_to_right {
   0%{
-    left: 10%
+    left: 10%;
   }
 
   25%{
-    left: 50%
+    left: 50%;
   }
 
   50%{
-    left: 70%
+    left: 70%;
   }
 
   75%{
-    left: 50%
+    left: 50%;
   }
 
   100%{
-    left: 10%
+    left: 10%;
   }
 }
 
@@ -222,22 +222,98 @@
 
 @keyframes right_to_left {
   0%{
-    right: 20%
+    right: 20%;
   }
 
   25%{
-    right: 50%
+    right: 50%;
   }
 
   50%{
-    right: 70%
+    right: 70%;
   }
 
   75%{
-    right: 50%
+    right: 50%;
   }
 
   100%{
-    right: 20%
+    right: 20%;
+  }
+}
+
+.ex-13-button:hover .ex-13-top-white{
+  animation-name: top_rotation;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+}
+
+@keyframes top_rotation {
+  0%{
+    left: 10%;
+    top: -10px;
+  }
+
+  25%{
+    left: 90%;
+    top: -10px;
+  }
+
+  50%{
+    left: 90%;
+    top: 65px;
+  }
+
+  75%{
+    left: -20px;
+    top: 65px;
+  }
+
+  90%{
+    left: -20px;
+    top: -10px;
+  }
+
+  100%{
+    left: 10%;
+    top: -10px;
+  }
+}
+
+.ex-13-button:hover .ex-13-bottom-white{
+  animation-name: bottom_rotation;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+}
+
+@keyframes bottom_rotation {
+  0%{
+    right: 20%;
+    bottom: -10px;
+  }
+
+  25%{
+    right: 80%;
+    bottom: -10px;
+  }
+
+  50%{
+    right: 80%;
+    bottom: 65px;
+  }
+
+  75%{
+    right: -30px;
+    bottom: 65px;
+  }
+
+  90%{
+    right: -30px;
+    bottom: -10px;
+  }
+
+  100%{
+    right: 20%;
+    bottom: -10px;
   }
 }
