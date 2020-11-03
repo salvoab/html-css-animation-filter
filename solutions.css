@@ -133,17 +133,14 @@
 
 .ex-11-icon{
   transform: rotate(0);
-  animation-name: spin_and_come_back;
-  animation-duration: 1s;
-  animation-play-state: paused;
 }
 
 .ex-11-icon:hover{
-  animation-play-state: running;
+  animation-name: spin_and_come_back;
+  animation-duration: 1s;
 }
 
 @keyframes spin_and_come_back {
-  /* 360 / 10 = 36 quindi tolgo 36 ogni 10%( = 100% / 10) */
   0% {
     transform: rotate(0);
   }
