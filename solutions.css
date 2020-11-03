@@ -130,3 +130,61 @@
     transform: rotate(0deg);
   }
 }
+
+.ex-11-icon{
+  transform: rotate(0);
+  animation-name: spin_and_come_back;
+  animation-duration: 1s;
+  animation-play-state: paused;
+}
+
+.ex-11-icon:hover{
+  animation-play-state: running;
+}
+
+@keyframes spin_and_come_back {
+  /* 360 / 10 = 36 quindi tolgo 36 ogni 10%( = 100% / 10) */
+  0% {
+    transform: rotate(0);
+  }
+
+  10% {
+    transform: rotate( calc ( (270deg / 7) * 1) );
+  }
+
+  20% {
+    transform: rotate( calc ( (270deg / 7) * 2) );
+  }
+
+  30% {
+    transform: rotate( calc ( (270deg / 7) * 3) );
+  }
+
+  40% {
+    transform: rotate( calc ( (270deg / 7) * 4) );
+  }
+
+  50% {
+    transform: rotate( calc ( (270deg / 7) * 5) );
+  }
+
+  60% {
+    transform: rotate( calc ( (270deg / 7) * 6) );
+  }
+
+  70% {
+    transform: rotate( 270deg );
+  }
+
+  80% {
+    transform: rotate( 180deg );
+  }
+
+  90% {
+    transform: rotate( 90deg );
+  }
+
+  100% {
+    transform: rotate(0);
+  }
+}
