@@ -29,3 +29,19 @@
 .ex-4-square:hover{
   opacity: 0;
 }
+
+.ex-5-square{
+  transition: transform 1s linear;
+}
+
+.ex-5-square:hover{
+  transform: scale(2);
+}
+
+.ex-5-square:active{
+  transform: scale(0.5);
+}
+
+.ex-6-img:hover{
+  filter: grayscale(1);
+}
